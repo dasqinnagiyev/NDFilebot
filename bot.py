@@ -177,7 +177,7 @@ async def ban(c: Client, m: Message):
         try:
             await c.send_message(
                 user_id,
-                f"Sən **{ban_duration}** günlük blok edildin ({ban_duration} gün botu işlədə bilməyəcəksən) **Səbəbi:** __{ban_reason}__ \n\n"
+                f"Sən **{ban_duration}** günlük blok edildin ({ban_duration} gün botu işlədə bilməyəcəksən) \n**Səbəbi:** __{ban_reason}__ \n\n"
                 f"**Admindən Mesaj**"
             )
             ban_log_text += '\n\nİstifadəçiyə bildiriş göndərildi!'
