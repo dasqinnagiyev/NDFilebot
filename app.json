@@ -1,0 +1,70 @@
+{
+    "name": "Telegram Fayl Botu",
+    "description": "A Telegram Files Store Bot in Pyrogram by @dasqinnagiyev",
+    "keywords": [
+        "telegram",
+        "files",
+        "store",
+        "bot"
+    ],
+    "repository": "https://github.com/dasqinnagiyev/NDFilebot",
+    "website": "https://telegram.dog/dasqinnagiyev",
+    "success_url": "https://t.me/dasqinnagiyev",
+    "env": {
+        "API_ID": {
+            "description": "Bu dəyəri my.telegram.org saytından əldə et"
+        },
+        "API_HASH": {
+            "description": "Bu dəyəri my.telegram.org saytından əldə et"
+        },
+        "BOT_TOKEN": {
+            "description": "Bunu @BotFather'dən əldə et :D"
+        },
+        "BOT_USERNAME": {
+            "description": "Botunun istifadəçi adı ([@] işarəsi olmadan yaz)"
+        },
+        "DB_CHANNEL": {
+            "description": "Baza kimi istifadə olunacaq Kanal ID.  Misal: -100123456789"
+        },
+        "BOT_OWNER": {
+            "description": "Bot sahibinin UserID"
+        },
+        "DATABASE_URL": {
+            "description": "MongoDB Baza URI Yayım üçün İstifadəçi ID-sini Saxlamağa lazımdır."
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Botu işlətmək üçün kanalınıza qatılsınlar? KANAL ID yazın. Misal: -100123456789",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "Log kanalı üçün ID. Misal: -100123456789"
+        },
+        "BANNED_USERS": {
+            "description": "Bloklu istifadəçilər",
+            "required": false
+        },
+        "BANNED_CHAT_IDS": {
+            "description": "Bloklu kanallar (ID)",
+            "required": false
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "İlətilib (forward) Tag ilə və ya Kopya olaraq (İlətilib (forward) Tag olmadan) yayımlayın. Dəyər True/False şəklində olmalıdır!!",
+            "required": false
+        },
+        "FORWARD_AS_COPY": {
+            "description": "Dəyər True'dursa, bütün mesajlar Kopya olaraq ötürüləcək. False olarsa, bütün mesajlar Forward Tag ilə ötürüləcək. Dəyər True/False şəklində olmalıdır!!",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
