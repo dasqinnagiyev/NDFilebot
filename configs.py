@@ -20,7 +20,7 @@ class Config(object):
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
 Bu fayllarınızı linklərə çevirən bir botdur!
-İstənilən faylı mənə göndərin, onu bazamda saxlayacağam. Bot Kanal üçün də işləyir. Redaktə İcazəsi ilə məni Admin olaraq kanala əlavə edin, Yüklənmiş Faylı Kanalda Saxlayaraq Paylaş Düyməsi əlavə edəcəm.
+İstənilən faylı mənə göndərin, onu bazamda saxlayacağam.\n**Bot Kanal üçün də işləyir.**\nRedaktə İcazəsi ilə məni Admin olaraq kanala əlavə edin, Yüklənmiş Faylı Kanalda Saxlayaraq Paylaş Düyməsi əlavə edəcəm.\n
 🤖 **Mənim Adım:** [NDFilebot](https://t.me/{BOT_USERNAME})
 
 📝 **Dil:** [Python3](https://www.python.org)
@@ -34,7 +34,7 @@ Bu fayllarınızı linklərə çevirən bir botdur!
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Gəlişdirici:** @dasqinnagiyev
 
-Həmçinin unutmayın ki, tərtibatçı +18 Məzmunu verilənlər bazasından siləcək. Belə şeyləri göndərməyin.
+Həmçinin unutmayın ki, tərtibatçı +18 Məzmunu bazadan siləcək. Belə şeyləri göndərməyin.
 [Dəstək ol](https://instagram.com/dasqinnagiyev) (Instagram)
 """
 	HOME_TEXT = """
