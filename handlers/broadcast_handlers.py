@@ -87,13 +87,13 @@ async def main_broadcast_handler(m, db):
     await out.delete()
     if failed == 0:
         await m.reply_text(
-            text=f"Toplu mesaj başa çatdı `{completed_in}`\n\nÜmumi istifadəçi {total_users}.\nÜmumi alınan {done}, bu qədər adama göndərildi --> {success}  və bu qədər adama göndərilmədi --> {failed} .",
+            text=f"Toplu mesaj başa çatdı `{completed_in}`\n\nÜmumi istifadəçi {total_users}.\nÜmumi alınan {done}, bu qədər adama göndərildi > {success}  və bu qədər adama göndərilmədi > {failed} .",
             quote=True
         )
     else:
         await m.reply_document(
             document='dasqin-nagiyev.txt',
-            caption=f"Toplu mesaj başa çatdı `{completed_in}`\n\nÜmumi istifadəçi {total_users}.\nÜmumi alınan {done}, bu qədər adama göndərildi --> {success}  və bu qədər adama göndərilmədi --> {failed} ..",
+            caption=f"Toplu mesaj başa çatdı `{completed_in}`\n\nÜmumi istifadəçi {total_users}.\nÜmumi alınan {done}, bu qədər adama göndərildi > {success}  və bu qədər adama göndərilmədi > {failed} ..",
             quote=True
         )
     await aiofiles.os.remove('dasqin-nagiyev.txt')
