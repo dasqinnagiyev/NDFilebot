@@ -403,7 +403,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             MediaList[f"{str(cmd.from_user.id)}"] = []
         file_id = cmd.message.reply_to_message.message_id
         MediaList[f"{str(cmd.from_user.id)}"].append(file_id)
-        await cmd.message.edit("Fayl Toplu halda saxlandı!\n\n"
+        await cmd.message.edit("Fayl Toplu halda saxlandı!\n\nbaşqa fayl əlavə edəcəksinizsə göndərin vəya\n"
                                "Toplu linki əldə etmək üçün aşağıdakı düyməni basın.",
                                reply_markup=InlineKeyboardMarkup([
                                    [InlineKeyboardButton("Toplu linki ver", callback_data="getBatchLink")],
