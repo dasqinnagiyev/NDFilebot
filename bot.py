@@ -118,7 +118,7 @@ async def main(bot: Client, message: Message):
             share_link = f"https://t.me/{Config.BOT_USERNAME}?start=dasqin_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
-                                                              "Paylaşım linki ver", url=share_link)]]))
+                                                              "Paylaşım linki", url=share_link)]]))
             if message.chat.username:
                 await forwarded_msg.reply_text(
                     f"#Kanal_düyməsi:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.message_id}) Kanalda Yayımlanan Fayllara Düymə Əlavə edildi!")
@@ -173,7 +173,7 @@ async def ban(c: Client, m: Message):
         user_id = int(m.command[1])
         ban_duration = int(m.command[2])
         ban_reason = ' '.join(m.command[3:])
-        ban_log_text = f"Banning user {user_id} for {ban_duration} days for the reason {ban_reason}."
+        ban_log_text = f"Bu istifadəçi {user_id} blok edildi. blok müddəti {ban_duration} gün səbəbi {ban_reason}."
         try:
             await c.send_message(
                 user_id,
@@ -218,7 +218,7 @@ async def unban(c: Client, m: Message):
         try:
             await c.send_message(
                 user_id,
-                f"Blokdan çıxarıldı!"
+                f"Blokdan çıxarıldın!"
             )
             unban_log_text += '\n\nİstifadəçiyə bildiriş göndərildi!'
         except:
