@@ -19,7 +19,7 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-10001020304050").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
-Bu fayllarınızı linklərə çevirən bir botdur!
+**Bu fayllarınızı linklərə çevirən bir botdur!**
 İstənilən faylı mənə göndərin, onu bazamda saxlayacağam.\n**Bot Kanal üçün də işləyir.**\nRedaktə İcazəsi ilə məni Admin olaraq kanala əlavə edin, Yüklənmiş Faylı Kanalda Saxlayaraq Paylaş Düyməsi əlavə edəcəm.\n
 🤖 **Mənim Adım:** [NDFilebot](https://t.me/{BOT_USERNAME})
 
@@ -35,7 +35,6 @@ Bu fayllarınızı linklərə çevirən bir botdur!
 🧑🏻‍💻 **Gəlişdirici:** @dasqinnagiyev
 
 Həmçinin unutmayın ki, tərtibatçı +18 Məzmunu bazadan siləcək. Belə şeyləri göndərməyin.
-[Dəstək ol](https://instagram.com/dasqinnagiyev) (Instagram)
 """
 	HOME_TEXT = """
 Salam, [{}](tg://user?id={})\n\nBu bir **Fayl paylaşım Botudur**.
